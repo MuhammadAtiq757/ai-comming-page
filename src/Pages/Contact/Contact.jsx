@@ -1,13 +1,27 @@
 import React from 'react';
-
+import './contact.css'
+import Swal from 'sweetalert2';
 const Contact = () => {
+
+const handleSuccess=()=>{
+  Swal.fire({
+    position: "top",
+    icon: "success",
+    width:"300px",
+    title: "Send Successful",
+    showConfirmButton: false,
+    timer: 1500
+  });
+
+}
+
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto pt-[60px] meet'>
             
-    <div className='mt-[60px]'>
-     <h1 className='text-center font-semibold text-2xl '>CONTACT US</h1>
+    <div className=''>
+     <h1 className='text-center font-semibold text-2xl text-white font-serif'>CONTACT US</h1>
    <p className='border-b-2 border-black w-[30px] mx-auto mt-6'></p>
-     <p className='text-center mt-10'>WE launch our new website soon. <br />
+     <p className='text-center mt-10 text-white'>WE launch our new website soon. <br />
      Please stay update and follow
      </p>
 
@@ -17,7 +31,7 @@ const Contact = () => {
     <input type="text" placeholder="Email" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" /> <br />
     <input type="text" placeholder="MESSAGE" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" />
     <br />
-    <button className='btn mt-8 ml-14 w-[180px] bg-black hover:bg-black flext justify-center items-center text-white'>SEND MESSAGE</button>
+    <button onClick={handleSuccess} className='btn mt-8 ml-14 w-[180px] bg-[#0ece91] hover:bg-black flext justify-center items-center hover:text-white'>SEND MESSAGE</button>
   </div>
 </div>
 

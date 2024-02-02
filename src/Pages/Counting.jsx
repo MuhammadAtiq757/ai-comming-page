@@ -29,11 +29,13 @@ const CountdownTimer = ({ targetDate }) => {
   }
 
   return (
-    <div className='grid lg:grid-cols-4 gap-4  container mx-auto   text-white justify-center items-center  text-3xl mb-8 px-16'>
-    <p className=''>Days: {timeLeft.days}</p>
-    <p className=''>Hours: {timeLeft.hours}</p>
-    <p className=''>Minutes: {timeLeft.minutes}</p>
-    <p className=''>Seconds: {timeLeft.seconds}</p>
+    <div >
+   <div className='flex  container mx-auto border-x-4 border-[#0ece91] w-[300px]   text-white font-serif justify-center items-center  text-2xl mb-8 px-16'>
+   <p className='pl-6 text-4xl'> {timeLeft.days} <hr /> <sup className='text-sm text-[#0ece91]'>D</sup></p>
+    <p className='pl-6 text-4xl'> {timeLeft.hours} <hr /> <sup className='text-sm text-[#0ece91]'>H</sup></p>
+    <p className='pl-6 text-4xl'> {timeLeft.minutes} <hr /> <sup className='text-sm text-[#0ece91]'>M</sup></p>
+    <p className='pl-6 text-4xl' text-4xl> {timeLeft.seconds} <hr /> <sup className='text-sm text-[#0ece91]'>S</sup></p>
+   </div>
   </div>
   
   );

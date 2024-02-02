@@ -6,10 +6,28 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Counting from './Counting';
+import Swal from 'sweetalert2';
 
 const CommingSoon = () => {
+
+const handleAlert = () =>{
+
+  Swal.fire({
+    position: "top",
+    icon: "success",
+    width:"300px",
+    title: "Notify Successful",
+    showConfirmButton: false,
+    timer: 1500
+  });
+
+}
+
+
+
     return (
-        <div className='tour text-center h-[620px] relative'>
+        <div className='tour text-center h-[800px] relative'>
 
 
 
@@ -25,11 +43,13 @@ const CommingSoon = () => {
 
    <div className='pt-[80px] px-4'>
 
+<Counting></Counting>
+
 
 <div>
-<h1 className='text-4xl font-bold text-white mb-6'>365 <sup className='text-sm'>DAYS</sup> </h1>
+{/* <h1 className='text-4xl font-bold text-white mb-6'>365 <sup className='text-sm'>DAYS</sup> </h1> */}
 </div>
-<div className='flex mx-auto border-x-4 border-green-600 w-[300px]  text-white justify-center items-center gap-8 text-4xl mb-8'>
+{/* <div className='flex mx-auto border-x-4 border-green-600 w-[300px]  text-white justify-center items-center gap-8 text-4xl mb-8'>
 
 
 <div>00
@@ -44,20 +64,20 @@ const CommingSoon = () => {
 <br /> 
 <p className='text-sm'>Sec</p>
 </div>
-</div>
+</div> */}
 
 
-   <p className='text-1xl font-semibold font-serif text-white'> WE ARE <br />
+   <p className='text-1xl font-semibold font-serif text-white mt-16'> WE ARE <br />
    <p className='text-2xl font-bold mt-1'>COMMING SOON</p>
    </p>
 
-   <div className="join mt-6 px-6">
+   <div className="join mt-6 px-4 mr-4">
   <input className="input input-bordered bg-inherit text-white border-white join-item" placeholder="Enter Your Email"/>
-  <button className="btn join-item">Get Notify</button>
+  <button onClick={handleAlert} className="btn join-item">Get Notify</button>
 </div>
 
 <div className='mt-6 flex justify-center gap-8'>
-  <button className='btn  bg-green-600 text-white w-32 hover:bg-inherit'><Link to='/contact'>Contact Us</Link></button>
+  <button className='btn  bg-green-500 hover:text-white w-32 hover:bg-inherit'><Link to='/contact'>Contact Us</Link></button>
   <button className='btn w-32  hover:bg-inherit hover:text-white'> About Us</button>
 </div>
 

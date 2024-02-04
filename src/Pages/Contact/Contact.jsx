@@ -16,7 +16,7 @@ const handleSuccess=()=>{
 }
 
     return (
-        <div className=' mx-auto pt-[60px] meet h-screen'>
+        <div className=' mx-auto meet h-screen'>
             
     
   <div>
@@ -27,7 +27,7 @@ const handleSuccess=()=>{
      </p>
   </div>
 
-     <div className='flex justify-center items-center form mt-6'>
+     <div className='flex justify-center items-center form mt-[50px]'>
   <div className=''>
     <input type="text" placeholder="Name" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" /> <br />
     <input type="text" placeholder="Email" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" /> <br />

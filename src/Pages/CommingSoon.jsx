@@ -84,10 +84,10 @@ const CommingSoon = () => {
           </div>
 
           <div className="mt-6 flex justify-center gap-8">
-            <button className="btn bg-[#0ece91] hover:text-white w-32 hover:bg-inherit">
-              <Link to="/contact">Contact Us</Link>
+           <button className="w-[100px] text-white border p-2 rounded hover:bg-inherit hover:text-black hover:bg-[#0ece91]">
+           <Link to="/contact">Contact Us</Link>
             </button>
-            <button className="btn w-32 hover:bg-inherit hover:text-white">
+           <button className="w-[100px] text-white border p-2 rounded hover:bg-inherit hover:text-black hover:bg-[#0ece91]">
               <Link to="/about">About Us</Link>
             </button>
           </div>

@@ -94,7 +94,7 @@ const CommingSoon = () => {
 
         
         </div> 
-        <div className="pb-[100px] flex text-white text-2xl  gap-4">
+        <div className="pb-[140px] flex text-white text-2xl  gap-4">
             <FaFacebook className="hover:text-[#0ece91]" />
             <FaInstagramSquare className="hover:text-[#0ece91]" />
             <FaWhatsappSquare className="hover:text-[#0ece91]" />

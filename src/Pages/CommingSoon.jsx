@@ -61,7 +61,11 @@ const CommingSoon = () => {
           </h2>
         </div>
 
-        <div className="pt-[80px] px-4">
+<div className='flex flex-col items-center justify-between h-screen relative'>
+<div></div>
+
+
+        <div className="px-4">
           <Counting></Counting>
 
           <p className="text-1xl font-semibold font-serif text-white mt-16">
@@ -88,14 +92,16 @@ const CommingSoon = () => {
             </button>
           </div>
 
-          <div className="flex justify-end mt-20 text-white text-2xl gap-4">
+        
+        </div> 
+        <div className=" flex justify-end items-center text-white text-2xl gap-4">
             <FaFacebook className="hover:text-[#0ece91]" />
             <FaInstagramSquare className="hover:text-[#0ece91]" />
             <FaWhatsappSquare className="hover:text-[#0ece91]" />
             <FaTwitter className="hover:text-[#0ece91]" />
             <FaSkype className="hover:text-[#0ece91]" />
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   );
